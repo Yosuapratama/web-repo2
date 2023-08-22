@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/materi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Materi - Alat Ukur Listrik</title>
+</head>
+<body>
+    <!--Ini Bagian Navigasinya -->
+    <div class="nav">
+        <div class="logo">
+            <i class="fa-solid fa-bars menu"></i>
+            <h2 class="textlogo">WEB PEMBELAJARAN FISIKA</h2>
+        </div>
+        
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-xmark menu close"></i>
+                <h2 class="textlogo">MATERI</h2>
+            </div>
+            <img src="img/listrik.png" class="gambarlistrik">
+            <div class="sidecontent">
+                <ol><hr>
+                    <li><a href="materi1.html" >Muatan Listrik dan Hukum Coulumb</a></li><hr>
+                    <li><a href="materi2.html" >Kapasitor</a></li><hr>
+                    <li><a href="materi3.html" >Alat Ukur Listrik</a></li><hr>
+                    <li><a href="materi4.html" >Medan Listrik dan Hukum Gaus</a></li><hr>
+                    <li><a href="materi5.html" >Hambatan dan Hambatan Jenis</a></li><hr>
+                </ol>
+            </div>
+            <div class="menuuser">
+                <div class="bungkususer">
+                    <a href="index.html"><i class="fa-solid fa-house-user "></i></a>
+                    <a href="informasi.html"><i class="fa-solid fa-circle-info "></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--Penutup Navigasi-->
+    <div class="tutupfungsi"></div>
+    <!--Penutup Fugsi Opacity-->
+    <!--Bagian Akhir Navigasi-->
+    <div class="container">
+        <div class="bungkus">
+            <div class="judul">
+                <span>Alat Ukur Listrik</span>
+            </div>
+            <div class="video">
+                <iframe class="video" width="660" height="415" src="https://www.youtube.com/embed/b89Kabv4Anw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <span>Penjelasan Lebih Lanjut</span>
+                <p>Alat Ukur listrik dibedakan menjadi 3 yaitu,Ampermeter, Voltmeter,dan Ohmmeter, untuk Penjelasan materi lebih lanjut dapat di download di link dibawah dan dapat disaksikan melalui video di atas</p>
+                <a href="#">Sumber Buku Fisika</a>
+                <a href="https://docs.google.com/document/d/1YdIc8VCxbl7bJ4hAAxxUkAGFPcyectch/edit?usp=share_link&ouid=112065729223677051414&rtpof=true&sd=true">Untuk Materi Lebih Lanjut Dapat Di Download Disini</a>
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="footer">
+        <span>COPYRIGHT ©2022 WEBPEMBELAJARANFISIKA.GITHUB.IO</span>
+    </div>
+   
+
+    
+    <script>
+
+        <!--Ini Fungsi Javascript -->
+        const navbar = document.querySelector(".nav");
+        tombolmenu = document.querySelectorAll(".menu");
+        overlay = document.querySelector(".tutupfungsi");
+        close = document.querySelector(".close");
+        
+      tombolmenu.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navbar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navbar.classList.remove("open");
+      });
+      
+      close.addEventListener("click", () => {
+        navbar.classList.remove("open");
+      });
+    </script>
+</body>
+</html>

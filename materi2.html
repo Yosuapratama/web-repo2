@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/materi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Materi - Kapasitor</title>
+</head>
+<body>
+    <!--Ini Bagian Navigasinya -->
+    <div class="nav">
+        <div class="logo">
+            <i class="fa-solid fa-bars menu"></i>
+            <h2 class="textlogo">WEB PEMBELAJARAN FISIKA</h2>
+        </div>
+        
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-xmark menu close"></i>
+                <h2 class="textlogo">MATERI</h2>
+            </div>
+            <img src="img/listrik.png" class="gambarlistrik">
+            <div class="sidecontent">
+                <ol><hr>
+                    <li><a href="materi1.html" >Muatan Listrik dan Hukum Coulumb</a></li><hr>
+                    <li><a href="materi2.html" >Kapasitor</a></li><hr>
+                    <li><a href="materi3.html" >Alat Ukur Listrik</a></li><hr>
+                    <li><a href="materi4.html" >Medan Listrik dan Hukum Gaus</a></li><hr>
+                    <li><a href="materi5.html" >Hambatan dan Hambatan Jenis</a></li><hr>
+                </ol>
+            </div>
+            <div class="menuuser">
+                <div class="bungkususer">
+                    <a href="index.html"><i class="fa-solid fa-house-user "></i></a>
+                    <a href="informasi.html"><i class="fa-solid fa-circle-info "></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--Penutup Navigasi-->
+    <div class="tutupfungsi"></div>
+    <!--Penutup Fugsi Opacity-->
+    <!--Bagian Akhir Navigasi-->
+
+    <div class="container">
+        <div class="bungkus">
+            <div class="judul">
+                <span>Kapasitor</span>
+            </div>
+            <div class="video">
+                <iframe class="video" width="660" height="415" src="https://www.youtube.com/embed/VAQ0PavVbfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <span>Penjelasan Lebih Lanjut</span>
+                <p>Kapasitor adalah komponen elektronik bersifat pasif yang dapat menyimpan muatan listrik sementara dengan satuan dari kapasitor adalah Farad.Kapasitor biasanya juga disebut dengan kondensator. Muatan listrik yang disimpan tersebut dapat disalurkan ke berbagai alat antara lain lampu flash camera, sirkuit elektronik, dan lainnya. Kapasitor dalam bidang elektronik disimbolkan dengan bentuk </p>
+                <p>KONSEP KAPASITOR</p>
+                <p>Konsep kapasitor termasuk dalam kelompok komponen pasif, yaitu jenis komponen yang bekerja tanpa memerlukan arus panjar. Kapasitor terdiri atas dua keping konduktor (lempeng logam) yang dipisahkan oleh bahan penyekat (isolator). Isolator penyekat ini sering disebut sebagai bahan (zat) dielektrik.</p>
+                <p>Zat dielektrik yang digunakan untuk menyekat kedua penghantar komponen tersebut dapat digunakan untuk membedakan jenis kapasitor. Beberapa pengertian kapasitor yang menggunakan bahan dielektrik antara lain berupa kertas, mika, plastik cairan dan lain sebagainya.</p>
+                <p>Jika kedua ujung keping konduktor ini diberi tegangan listrik, maka muatan-muatan positif akan mengumpul pada salah satu kaki (elektroda) metalnya. Pada saat yang sama muatan-muatan negatif terkumpul pada ujung metal yang lainnya.
+Muatan positif tidak dapat mengalir menuju ujung kutup negatif dan sebaliknya muatan negatif tidak bisa menuju ke ujung kutup positif. Hal ini disebabkan keduanya terpisah oleh bahan dielektrik yang non-konduktif.
+Muatan elektrik ini akan “tersimpan” selama tidak ada konduksi pada ujung-ujung kakinya.
+</p>
+                <a href="#">Sumber Buku Fisika</a>
+                <a href="https://docs.google.com/document/d/1W9llqA3aFU_OpMUS9EFR6Fl1DxrxQcRN/edit?usp=share_link&ouid=112065729223677051414&rtpof=true&sd=true">Untuk Lebih Lengkapnya Tentang Rumus & Sebagainya Dapat di Download Disini</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>COPYRIGHT ©2022 WEBPEMBELAJARANFISIKA.GITHUB.IO</span>
+    </div>
+   
+
+    
+    <script>
+
+        <!--Ini Fungsi Javascript -->
+        const navbar = document.querySelector(".nav");
+        tombolmenu = document.querySelectorAll(".menu");
+        overlay = document.querySelector(".tutupfungsi");
+        close = document.querySelector(".close");
+        
+      tombolmenu.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navbar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navbar.classList.remove("open");
+      });
+      
+      close.addEventListener("click", () => {
+        navbar.classList.remove("open");
+      });
+    </script>
+</body>
+</html>

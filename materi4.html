@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/materi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Materi - Medan Listrik dan Hukum Gaus</title>
+</head>
+<body>
+    <!--Ini Bagian Navigasinya -->
+    <div class="nav">
+        <div class="logo">
+            <i class="fa-solid fa-bars menu"></i>
+            <h2 class="textlogo">WEB PEMBELAJARAN FISIKA</h2>
+        </div>
+        
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-xmark menu close"></i>
+                <h2 class="textlogo">MATERI</h2>
+            </div>
+            <img src="img/listrik.png" class="gambarlistrik">
+            <div class="sidecontent">
+                <ol><hr>
+                    <li><a href="materi1.html" >Muatan Listrik dan Hukum Coulumb</a></li><hr>
+                    <li><a href="materi2.html" >Kapasitor</a></li><hr>
+                    <li><a href="materi3.html" >Alat Ukur Listrik</a></li><hr>
+                    <li><a href="materi4.html" >Medan Listrik dan Hukum Gaus</a></li><hr>
+                    <li><a href="materi5.html" >Hambatan dan Hambatan Jenis</a></li><hr>
+                </ol>
+            </div>
+            <div class="menuuser">
+                <div class="bungkususer">
+                    <a href="index.html"><i class="fa-solid fa-house-user "></i></a>
+                    <a href="informasi.html"><i class="fa-solid fa-circle-info "></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--Penutup Navigasi-->
+    <div class="tutupfungsi"></div>
+    <!--Penutup Fugsi Opacity-->
+    <!--Bagian Akhir Navigasi-->
+
+    <div class="container">
+        <div class="bungkus">
+            <div class="judul">
+                <span>Medan Listrik dan Hukum Gaus</span>
+            </div>
+            <div class="video">
+                <iframe class="video" width="660" height="415" src="https://www.youtube.com/embed/DnnA5-PhWRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <span>Penjelasan Lebih Lanjut</span>
+                <p>PENGERTIAN
+Medan Listrik adalah daerah di sekitar muatan yang masih dipengaruhi gaya oleh muatan listrik tersebut. Medan listrik merupakan suatu besaran vektor yang mempunyai nilai dan arah.
+Hukum Gauss adalah metode yang sangat efektif untuk mencari kuat medan listrik di sekitar muatan kontinu pada benda yang memiliki simetri.</p>
+                <p>PRINSIP MEDAN LISTRIK</p>
+                <p>(1) Medan Listrik untuk muatan positif berarah radial menjauhi (atau keluar) dari muatan.</p>
+                <p>(2) Medan Listrik untuk muatan negatif berarah radial mendekati (masuk) muatan.</p>
+                <a href="https://www.detik.com/edu/detikpedia/d-6211891/pengertian-hukum-gauss-lengkap-dengan-bunyi-dan-rumusnya-siswa-wajib-tahu" target="_blank">Sumber Pengertian Hukum Gaus by Detik.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>COPYRIGHT ©2022 WEBPEMBELAJARANFISIKA.GITHUB.IO</span>
+    </div>
+   
+
+    
+    <script>
+
+        <!--Ini Fungsi Javascript -->
+        const navbar = document.querySelector(".nav");
+        tombolmenu = document.querySelectorAll(".menu");
+        overlay = document.querySelector(".tutupfungsi");
+        close = document.querySelector(".close");
+        
+      tombolmenu.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navbar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navbar.classList.remove("open");
+      });
+      
+      close.addEventListener("click", () => {
+        navbar.classList.remove("open");
+      });
+    </script>
+</body>
+</html>

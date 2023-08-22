@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    scroll-behavior: smooth;
+}
+body {
+    background: #e3f2fd;
+}
+.sidecontent ol li a{
+    text-decoration: none;
+}
+.nav {
+    overflow-x: hidden;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1e2948;
+}
+.nav .logo {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+    color: #fbff00;
+}
+.logo .menu {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.logo .textlogo {
+    font-size: 22px;
+    font-weight: 500;
+}
+.nav .sidebar {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 250px;
+    padding: 20px 0;
+    background-color: #1e2948;
+    transition: all 0.3s ease;
+}
+.nav.open .sidebar {
+    left: 0;
+}
+
+.tutupfungsi {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.5);    
+}
+.nav.open ~ .tutupfungsi {
+  opacity: 1;
+  left: 250px;
+  pointer-events: auto;
+}
+
+.sidecontent {
+    margin-top: 30%;
+    margin-left: 10%;
+}
+
+.sidecontent ol li {
+    color: yellow;
+    margin: 15px 0px;
+}
+
+.sidecontent ol li a {
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    padding-top: 30px;
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.isikonten {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 2000px;
+    background-color: #9cb6ffd9;
+}
+.textawal {
+    width: 60%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textawal span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+}
+.gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 450px;
+}
+.box1 {
+    box-shadow: 0px 0px 10px #3f3351;
+    margin-right:52%;
+    margin-bottom: 30%;
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 15px;
+    animation: rotate 8s linear infinite;
+}
+.box2 {
+    box-shadow: 0px 0px 10px #3f3351;
+    margin-left:52%;
+    margin-top: 30%;
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 15px;
+    animation: rotate 8s linear infinite;
+}
+.gambar img {
+    box-shadow: 0px 0px 10px #3f3351;
+    z-index: 1;
+    border-radius: 15px;
+    width: 95%;
+    height: 420px;
+}
+
+.kelas {
+    width: 60%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.kelas .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper h2{
+    font-size: 30px;
+}
+.about {
+    border-radius: 10px;
+    background-color: #edc8c8;
+    margin-top: 5%;
+    width: 60%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px #3f3351;
+}
+
+.judul {
+    margin: 10px 0px;
+}
+
+
+
+.sejarah {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 60%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #edc8c8;
+    text-align: center;
+    box-shadow: 0px 0px 10px #3f3351;
+}
+.materipm {
+    background-color: #e63e91;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 60%;
+    height: 450px;
+    box-shadow: 0px 0px 10px #3f3351;
+}
+.judulmateri h2{
+
+}
+.materisatu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 95%;
+    height: 60px;
+    background-color:#0b2981;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.materisatu a{
+    color: white;
+    text-decoration: none;
+}
+.materidua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 60px;
+    background-color: #0b2981;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.materidua a{
+    color: white;
+    text-decoration: none;
+}
+.materitiga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 60px;
+    background-color:#0b2981;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.materitiga a{
+    color: white;
+    text-decoration: none;
+}
+.materiempat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 60px;
+    background-color:#0b2981;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.materiempat a{
+    color: white;
+    text-decoration: none;
+}
+.materilima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 60px;
+    background-color: #0b2981;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.materilima a{
+    color: white;
+    text-decoration: none;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #1e2948;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer span{
+    font-family: 'Roboto', sans-serif;
+    color: #fbff00;
+}
+
+
+.menuuser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+}
+.bungkususer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    height: 100px;
+}
+.bungkususer a{
+    margin: 0px 20px;
+    color: white;
+    font-size: 50px;
+}
+
+.gambarlistrik {
+    margin-top: 10px;
+    margin-left: 40%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: pudar 5s linear infinite;
+}
+.jamdigital {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+    border-radius: 10px;
+    height: 110px;
+    background-color: #e63e91;
+
+}
+.kotak {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+    width: 20%;
+    height: 90px;
+    background-color: #1e2948;
+    border-radius: 10px;
+}
+.kotak p {
+    color: white;
+    font-size: 40px;
+}
+.kotak span {
+    color: #fbff00;
+}
+.gear {
+    overflow: hidden;
+    margin-bottom: 32%;
+    margin-left: 47%;
+    position: absolute;
+    animation: rotate 8s linear infinite;
+}
+.gear img {
+    width: 80px;
+    width: 80px;
+}
+
+
+
+@keyframes pudar {
+    0% {
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.1;
+    }
+    30%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1100px){
+    .gambar img {
+        height: 400px;
+    }
+   .isikonten {
+        width: 100%;
+   }
+   .box1 {
+        margin-right:65%;
+        margin-bottom: 40%;
+   }
+   .box2 {
+        margin-left:65%;
+        margin-top: 40%;
+   }
+   .materipm {
+    width: 90;
+   }
+   .gear {
+    margin-bottom: 40%;
+    margin-left: 58%;
+   }
+}
+
+
+@media screen and (min-width: 560px) and (max-width: 767px){
+    .gear {
+        display: none;
+    }
+    .gambar {
+        width: 80%;
+        height: 310px;
+    }
+    .gambar img {
+        width: 90%;
+        height: 260px;
+    }
+    .isikonten {
+        width: 100%;
+   }
+   .box1 {
+        width: 70px;
+        height: 70px;
+        margin-right:65%;
+        margin-bottom: 40%; 
+   }
+   .box2 {
+        width: 70px;
+        height: 70px;
+        margin-left:65%;
+        margin-top: 40%; 
+   }
+   .textawal {
+    width: 80%;
+   }
+   .textawal span {
+    font-size: 17px;
+   }
+   .kelas {
+    width: 80%;
+   }
+   .about {
+    width: 80%;
+    height: 200px;
+   }
+   .sejarah {
+    width: 80%;
+    height: 320px;
+   }
+   .materipm {
+    width: 80%;
+   }
+   .gear {
+    margin-bottom: 60%;
+    margin-left: 78%;
+   }
+}
+@media screen and (min-width: 455px) and (max-width: 559px){
+    .gear {
+        display: none;
+    }
+    .gambar {
+        width: 80%;
+        height: 310px;
+    }
+    .gambar img {
+        width: 90%;
+        height: 260px;
+    }
+    .isikonten {
+        width: 100%;
+   }
+   .box1 {
+        width: 70px;
+        height: 70px;
+        margin-right:65%;
+        margin-bottom: 45%; 
+   }
+   .box2 {
+        width: 70px;
+        height: 70px;
+        margin-left:65%;
+        margin-top: 45%; 
+   }
+   .textawal {
+    width: 80%;
+   }
+   .textawal span {
+    font-size: 17px;
+   }
+   .kelas {
+    width: 80%;
+   }
+   .about {
+    width: 80%;
+    height: 250px;
+   }
+   .sejarah {
+    width: 80%;
+    height: 500px;
+   }
+   .materipm {
+    width: 80%;
+   }
+   .jamdigital {
+    width: 80%;
+    }
+    .gear {
+    margin-bottom: 82%;
+    margin-left: 71%;
+   }
+
+}
+@media screen and (min-width: 0px) and (max-width: 454px){
+    .gear {
+        display: none;
+    }
+    html,body {
+        overflow-x: hidden;
+    }
+    .jamdigital {
+        width: 90%;
+    }
+    .gambar {
+        width: 90%;
+        height: 280px;
+    }
+    .gambar img {
+        width: 90%;
+        height: 200px;
+    }
+    .isikonten {
+        width: 100%;
+   }
+   .box1 {
+        width: 70px;
+        height: 70px;
+        margin-right:70%;
+        margin-bottom: 50%; 
+   }
+   .box2 {
+        width: 70px;
+        height: 70px;
+        margin-left:70%;
+        margin-top: 50%; 
+   }
+   .textawal {
+    width: 90%;
+   }
+   .textawal span {
+    font-size: 17px;
+   }
+   .kelas {
+    width: 90%;
+   }
+   .about {
+    width: 90%;
+    height: 230px;
+   }
+   .sejarah {
+    width: 90%;
+    height: 500px;
+   }
+   .footer span{
+        font-size: 12px;
+   }
+   .materipm {
+    width: 90%;
+   }
+   .gear {
+    margin-bottom: 105%;
+    margin-left: 85%;
+   }
+   
+}
+
+@media screen and (max-width: 2000px)and (min-width: 1367px){
+    .box1 {
+        width: 90px;
+        height: 90px;
+        margin-right:40%;
+        margin-bottom: 21%; 
+    }
+    .box2 {
+        width: 90px;
+        height: 90px;
+        margin-left:40%;
+        margin-top: 21%; 
+   }
+   .gambar img {
+    width: 70%;
+   }
+}

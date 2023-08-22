@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+    scroll-behavior: smooth;
+}
+body {
+  background: #e3f2fd;
+}
+.sidecontent ol li a{
+    text-decoration: none;
+}
+.nav {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #1e2948;
+}
+.nav .logo {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  margin: 5px 20px;
+  color: #fbff00;
+}
+.logo .menu {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.logo .textlogo {
+  font-size: 22px;
+  font-weight: 500;
+}
+.nav .sidebar {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 250px;
+  padding: 20px 0;
+  background-color: #1e2948;
+  transition: all 0.3s ease;
+  
+}
+.nav.open .sidebar {
+  left: 0;
+}
+
+.tutupfungsi {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.5);    
+}
+.nav.open ~ .tutupfungsi {
+  opacity: 1;
+  left: 250px;
+  pointer-events: auto;
+}
+
+
+.container {
+  background-color: #9cb6ffd9;
+  padding-top: 80px;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper {
+ 
+  width: 80%;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.wrapper p {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #1e2948;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer span{
+    font-family: 'Roboto', sans-serif;
+    color: #fbff00;
+}
+.sidecontent {
+    margin-top: 30%;
+    margin-left: 10%;
+}
+.sidecontent ol li {
+    color: yellow;
+    margin: 15px 0px;
+}
+
+.sidecontent ol li a {
+    color: white;
+    font-weight: bold;
+}
+
+.menuuser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+}
+.bungkususer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    height: 100px;
+}
+.bungkususer a{
+    margin: 0px 20px;
+    color: white;
+    font-size: 50px;
+}
+.gambarlistrik {
+    margin-top: 10px;
+    margin-left: 40%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: pudar 5s linear infinite;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #1e2948;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer span{
+    font-family: 'Roboto', sans-serif;
+    color: #fbff00;
+}
+
+@keyframes pudar {
+    0% {
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.1;
+    }
+    30%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1100px){
+   
+}
+
+@media screen and (min-width:1101px) and (max-width:1300px){
+    
+}
+
+@media screen and (max-width:767px){
+    .footer {
+    font-size: 14px;
+   }
+    
+}
