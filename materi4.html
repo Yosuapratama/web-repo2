@@ -69,29 +69,6 @@ Hukum Gauss adalah metode yang sangat efektif untuk mencari kuat medan listrik d
         <span>COPYRIGHT ©2022 WEBPEMBELAJARANFISIKA.GITHUB.IO</span>
     </div>
    
-
-    
-    <script>
-
-        <!--Ini Fungsi Javascript -->
-        const navbar = document.querySelector(".nav");
-        tombolmenu = document.querySelectorAll(".menu");
-        overlay = document.querySelector(".tutupfungsi");
-        close = document.querySelector(".close");
-        
-      tombolmenu.forEach((menuBtn) => {
-        menuBtn.addEventListener("click", () => {
-          navbar.classList.toggle("open");
-        });
-      });
-
-      overlay.addEventListener("click", () => {
-        navbar.classList.remove("open");
-      });
-      
-      close.addEventListener("click", () => {
-        navbar.classList.remove("open");
-      });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
